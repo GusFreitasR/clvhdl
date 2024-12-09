@@ -1,0 +1,28 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+entity votacao is
+    Port (
+        j0, j1, j2, j3 : in STD_LOGIC; -- Entradas dos votos dos julgadores
+        vd, vd : out STD_LOGIC         -- Saídas para as lâmpadas (verde e vermelha)
+    );
+end votacao;
+
+architecture Behavioral of votacao is
+    signal total_votos : integer range 0 to 4; -- Contador de votos
+begin
+    process (j0, j1, j2, j3)
+    begin
+        total_votos <= to_integer(unsigned(J0 & J1 & J2 & J3));
+        if total_votos > 2 then
+            vd <= '1';
+            vm <= '0';
+        elsif total_votos = 2 then
+            vd <= '1';
+            vm <= '1';
+        else
+            vd <= '0';
+            vm <= '1';
+        end if;
+    end process;
+end Behavioral;

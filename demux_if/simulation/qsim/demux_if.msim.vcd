@@ -1,0 +1,146 @@
+$comment
+	File created using the following command:
+		vcd file demux_if.msim.vcd -direction
+$end
+$date
+	Mon Dec 09 03:10:54 2024
+$end
+$version
+	ModelSim Version 2020.1
+$end
+$timescale
+	1ps
+$end
+
+$scope module demux_if_vhd_vec_tst $end
+$var wire 1 ! a $end
+$var wire 1 " b $end
+$var wire 1 # c $end
+$var wire 1 $ d $end
+$var wire 1 % sel [1] $end
+$var wire 1 & sel [0] $end
+$var wire 1 ' x $end
+
+$scope module i1 $end
+$var wire 1 ( gnd $end
+$var wire 1 ) vcc $end
+$var wire 1 * unknown $end
+$var wire 1 + devoe $end
+$var wire 1 , devclrn $end
+$var wire 1 - devpor $end
+$var wire 1 . ww_devoe $end
+$var wire 1 / ww_devclrn $end
+$var wire 1 0 ww_devpor $end
+$var wire 1 1 ww_x $end
+$var wire 1 2 ww_a $end
+$var wire 1 3 ww_b $end
+$var wire 1 4 ww_c $end
+$var wire 1 5 ww_d $end
+$var wire 1 6 ww_sel [1] $end
+$var wire 1 7 ww_sel [0] $end
+$var wire 1 8 \a~output_o\ $end
+$var wire 1 9 \b~output_o\ $end
+$var wire 1 : \c~output_o\ $end
+$var wire 1 ; \d~output_o\ $end
+$var wire 1 < \x~input_o\ $end
+$var wire 1 = \sel[1]~input_o\ $end
+$var wire 1 > \sel[0]~input_o\ $end
+$var wire 1 ? \a~0_combout\ $end
+$var wire 1 @ \Equal2~0_combout\ $end
+$var wire 1 A \Equal2~1_combout\ $end
+$var wire 1 B \Equal2~2_combout\ $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+1!
+0"
+0#
+0$
+1'
+0(
+1)
+x*
+1+
+1,
+1-
+1.
+1/
+10
+11
+12
+03
+04
+05
+18
+09
+0:
+0;
+1<
+0=
+0>
+1?
+0@
+0A
+0B
+0%
+0&
+06
+07
+$end
+#240000
+1&
+17
+1>
+0?
+1@
+19
+08
+13
+02
+1"
+0!
+#480000
+0&
+1%
+07
+16
+1=
+0>
+0@
+1A
+1:
+09
+14
+03
+1#
+0"
+#720000
+1&
+17
+1>
+0A
+1B
+1;
+0:
+15
+04
+1$
+0#
+#960000
+0&
+0%
+07
+06
+0=
+0>
+1?
+0B
+0;
+18
+05
+12
+0$
+1!
+#1000000

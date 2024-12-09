@@ -1,0 +1,19 @@
+|demux_case
+x => Mux0.IN3
+x => Mux1.IN3
+x => Mux2.IN3
+x => Mux3.IN3
+a <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+b <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+c <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+d <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+sel[0] => Mux0.IN5
+sel[0] => Mux1.IN5
+sel[0] => Mux2.IN5
+sel[0] => Mux3.IN5
+sel[1] => Mux0.IN4
+sel[1] => Mux1.IN4
+sel[1] => Mux2.IN4
+sel[1] => Mux3.IN4
+
+

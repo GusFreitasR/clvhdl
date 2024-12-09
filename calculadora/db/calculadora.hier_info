@@ -1,0 +1,157 @@
+|calculadora
+A[0] => somador_subtrator:somador_subtrator_inst.a[0]
+A[1] => somador_subtrator:somador_subtrator_inst.a[1]
+A[2] => somador_subtrator:somador_subtrator_inst.a[2]
+A[3] => somador_subtrator:somador_subtrator_inst.a[3]
+A[4] => somador_subtrator:somador_subtrator_inst.a[4]
+A[5] => somador_subtrator:somador_subtrator_inst.a[5]
+A[6] => somador_subtrator:somador_subtrator_inst.a[6]
+A[7] => somador_subtrator:somador_subtrator_inst.a[7]
+B[0] => somador_subtrator:somador_subtrator_inst.b[0]
+B[1] => somador_subtrator:somador_subtrator_inst.b[1]
+B[2] => somador_subtrator:somador_subtrator_inst.b[2]
+B[3] => somador_subtrator:somador_subtrator_inst.b[3]
+B[4] => somador_subtrator:somador_subtrator_inst.b[4]
+B[5] => somador_subtrator:somador_subtrator_inst.b[5]
+B[6] => somador_subtrator:somador_subtrator_inst.b[6]
+B[7] => somador_subtrator:somador_subtrator_inst.b[7]
+OP => somador_subtrator:somador_subtrator_inst.operacao
+OP => Luz2.DATAIN
+OP => Luz1.DATAIN
+S[0] <= somador_subtrator:somador_subtrator_inst.resultado[0]
+S[1] <= somador_subtrator:somador_subtrator_inst.resultado[1]
+S[2] <= somador_subtrator:somador_subtrator_inst.resultado[2]
+S[3] <= somador_subtrator:somador_subtrator_inst.resultado[3]
+S[4] <= somador_subtrator:somador_subtrator_inst.resultado[4]
+S[5] <= somador_subtrator:somador_subtrator_inst.resultado[5]
+S[6] <= somador_subtrator:somador_subtrator_inst.resultado[6]
+S[7] <= somador_subtrator:somador_subtrator_inst.resultado[7]
+Luz1 <= OP.DB_MAX_OUTPUT_PORT_TYPE
+Luz2 <= OP.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|calculadora|somador_subtrator:somador_subtrator_inst
+a[0] => somador:gen_somador:0:somador_inst.a
+a[1] => somador:gen_somador:1:somador_inst.a
+a[2] => somador:gen_somador:2:somador_inst.a
+a[3] => somador:gen_somador:3:somador_inst.a
+a[4] => somador:gen_somador:4:somador_inst.a
+a[5] => somador:gen_somador:5:somador_inst.a
+a[6] => somador:gen_somador:6:somador_inst.a
+a[7] => somador:gen_somador:7:somador_inst.a
+b[0] => b_mod[0].IN0
+b[1] => b_mod[1].IN0
+b[2] => b_mod[2].IN0
+b[3] => b_mod[3].IN0
+b[4] => b_mod[4].IN0
+b[5] => b_mod[5].IN0
+b[6] => b_mod[6].IN0
+b[7] => b_mod[7].IN0
+operacao => b_mod[0].IN1
+operacao => b_mod[1].IN1
+operacao => b_mod[2].IN1
+operacao => b_mod[3].IN1
+operacao => b_mod[4].IN1
+operacao => b_mod[5].IN1
+operacao => b_mod[6].IN1
+operacao => b_mod[7].IN1
+operacao => somador:gen_somador:0:somador_inst.cin
+resultado[0] <= somador:gen_somador:0:somador_inst.s
+resultado[1] <= somador:gen_somador:1:somador_inst.s
+resultado[2] <= somador:gen_somador:2:somador_inst.s
+resultado[3] <= somador:gen_somador:3:somador_inst.s
+resultado[4] <= somador:gen_somador:4:somador_inst.s
+resultado[5] <= somador:gen_somador:5:somador_inst.s
+resultado[6] <= somador:gen_somador:6:somador_inst.s
+resultado[7] <= somador:gen_somador:7:somador_inst.s
+carry_out <= somador:gen_somador:7:somador_inst.cout
+
+
+|calculadora|somador_subtrator:somador_subtrator_inst|somador:\gen_somador:0:somador_inst
+a => s.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+cin => s.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|calculadora|somador_subtrator:somador_subtrator_inst|somador:\gen_somador:1:somador_inst
+a => s.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+cin => s.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|calculadora|somador_subtrator:somador_subtrator_inst|somador:\gen_somador:2:somador_inst
+a => s.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+cin => s.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|calculadora|somador_subtrator:somador_subtrator_inst|somador:\gen_somador:3:somador_inst
+a => s.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+cin => s.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|calculadora|somador_subtrator:somador_subtrator_inst|somador:\gen_somador:4:somador_inst
+a => s.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+cin => s.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|calculadora|somador_subtrator:somador_subtrator_inst|somador:\gen_somador:5:somador_inst
+a => s.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+cin => s.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|calculadora|somador_subtrator:somador_subtrator_inst|somador:\gen_somador:6:somador_inst
+a => s.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+cin => s.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|calculadora|somador_subtrator:somador_subtrator_inst|somador:\gen_somador:7:somador_inst
+a => s.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+cin => s.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+

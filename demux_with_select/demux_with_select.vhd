@@ -1,0 +1,36 @@
+LIBRARY IEEE;
+USE IEEE.STD_LOGIC_1164.ALL;
+
+ENTITY demux_with_select IS PORT (
+
+		x: IN STD_LOGIC;
+		a: OUT STD_LOGIC;
+		b: OUT STD_LOGIC;
+		c: OUT STD_LOGIC;
+		d: OUT STD_LOGIC;
+		sel: IN STD_LOGIC_VECTOR(1 downto 0)
+
+		);
+END demux_with_select;
+
+
+ARCHITECTURE demux of demux_with_select is 
+
+BEGIN
+
+		WITH sel SELECT
+				a <= x WHEN "00", '0' WHEN OTHERS;
+		WITH sel SELECT
+				b <= x WHEN "01", '0' WHEN OTHERS;
+		WITH sel SELECT
+				c <= x WHEN "10", '0' WHEN OTHERS;
+		WITH sel SELECT
+				d <= x WHEN "11", '0' WHEN OTHERS;
+
+END demux;
+
+
+
+
+
+

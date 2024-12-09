@@ -1,0 +1,35 @@
+LIBRARY IEEE;
+USE IEEE.STD_LOGIC_1164.ALL;
+
+ENTITY comparator_5_bits IS
+	PORT(
+		a, b : IN STD_LOGIC_VECTOR (4 DOWNTO 0); 
+		igual, maior, menor : OUT STD_LOGIC 
+	);
+END comparator_5_bits;
+
+ARCHITECTURE structural OF comparator_5_bits IS
+	COMPONENT comparator_1_bit
+		PORT(
+			a, b: IN STD_LOGIC;
+			i: IN STD_LOGIC_VECTOR (2 DOWNTO 0);
+			s: OUT STD_LOGIC_VECTOR (2 DOWNTO 0)
+		);
+	END COMPONENT;
+
+	SIGNAL stages : STD_LOGIC_VECTOR (2 DOWNTO 0); 
+BEGIN
+	
+	stages <= "100"; 
+
+	stage_4: comparator_1_bit PORT MAP(a(4), b(4), stages, stages);
+	stage_3: comparator_1_bit PORT MAP(a(3), b(3), stages, stages); 
+	stage_2: comparator_1_bit PORT MAP(a(2), b(2), stages, stages); 
+	stage_1: comparator_1_bit PORT MAP(a(1), b(1), stages, stages); 
+	stage_0: comparator_1_bit PORT MAP(a(0), b(0), stages, stages); 
+
+
+	igual <= stages(2);
+	maior <= stages(1);
+	menor <= stages(0);
+END structural;

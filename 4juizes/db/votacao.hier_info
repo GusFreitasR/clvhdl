@@ -1,0 +1,12 @@
+|votacao
+j0 => ~NO_FANOUT~
+j1 => LessThan0.IN4
+j1 => Equal0.IN0
+j2 => LessThan0.IN5
+j2 => Equal0.IN2
+j3 => LessThan0.IN6
+j3 => Equal0.IN1
+vd <= vd.DB_MAX_OUTPUT_PORT_TYPE
+vm <= LessThan0.DB_MAX_OUTPUT_PORT_TYPE
+
+

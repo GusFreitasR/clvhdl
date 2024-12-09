@@ -1,0 +1,101 @@
+|comparador
+a[0] => comparator_1b:comp_0.a
+a[1] => comparator_1b:comp_1.a
+a[2] => comparator_1b:comp_2.a
+a[3] => comparator_1b:comp_3.a
+a[4] => comparator_1b:comp_4.a
+b[0] => comparator_1b:comp_0.b
+b[1] => comparator_1b:comp_1.b
+b[2] => comparator_1b:comp_2.b
+b[3] => comparator_1b:comp_3.b
+b[4] => comparator_1b:comp_4.b
+result[0] <= comparator_1b:comp_0.s[0]
+result[1] <= comparator_1b:comp_0.s[1]
+result[2] <= comparator_1b:comp_0.s[2]
+
+
+|comparador|comparator_1b:comp_4
+a => s.IN0
+a => s.IN0
+a => s.IN0
+b => s.IN1
+b => s.IN1
+b => s.IN1
+i[0] => s.IN1
+i[1] => s.IN1
+i[2] => s.IN1
+i[2] => s.IN1
+i[2] => s.IN1
+s[0] <= s.DB_MAX_OUTPUT_PORT_TYPE
+s[1] <= s.DB_MAX_OUTPUT_PORT_TYPE
+s[2] <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|comparador|comparator_1b:comp_3
+a => s.IN0
+a => s.IN0
+a => s.IN0
+b => s.IN1
+b => s.IN1
+b => s.IN1
+i[0] => s.IN1
+i[1] => s.IN1
+i[2] => s.IN1
+i[2] => s.IN1
+i[2] => s.IN1
+s[0] <= s.DB_MAX_OUTPUT_PORT_TYPE
+s[1] <= s.DB_MAX_OUTPUT_PORT_TYPE
+s[2] <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|comparador|comparator_1b:comp_2
+a => s.IN0
+a => s.IN0
+a => s.IN0
+b => s.IN1
+b => s.IN1
+b => s.IN1
+i[0] => s.IN1
+i[1] => s.IN1
+i[2] => s.IN1
+i[2] => s.IN1
+i[2] => s.IN1
+s[0] <= s.DB_MAX_OUTPUT_PORT_TYPE
+s[1] <= s.DB_MAX_OUTPUT_PORT_TYPE
+s[2] <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|comparador|comparator_1b:comp_1
+a => s.IN0
+a => s.IN0
+a => s.IN0
+b => s.IN1
+b => s.IN1
+b => s.IN1
+i[0] => s.IN1
+i[1] => s.IN1
+i[2] => s.IN1
+i[2] => s.IN1
+i[2] => s.IN1
+s[0] <= s.DB_MAX_OUTPUT_PORT_TYPE
+s[1] <= s.DB_MAX_OUTPUT_PORT_TYPE
+s[2] <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|comparador|comparator_1b:comp_0
+a => s.IN0
+a => s.IN0
+a => s.IN0
+b => s.IN1
+b => s.IN1
+b => s.IN1
+i[0] => s.IN1
+i[1] => s.IN1
+i[2] => s.IN1
+i[2] => s.IN1
+i[2] => s.IN1
+s[0] <= s.DB_MAX_OUTPUT_PORT_TYPE
+s[1] <= s.DB_MAX_OUTPUT_PORT_TYPE
+s[2] <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
