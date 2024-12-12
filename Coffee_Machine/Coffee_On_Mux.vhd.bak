@@ -1,0 +1,14 @@
+Library ieee;
+Use ieee.std_logic_1164.all;
+
+Entity Coffee_Err_Mux is
+Port (Err : in std_logic;
+		S : out std_logic_vector (6 downto 0)); 		
+End;
+
+Architecture Dataflow of Coffee_Err_Mux is
+Begin
+	With Err select
+		S <= "0001001" when '0',
+			  "1111111" when others;
+End Dataflow;

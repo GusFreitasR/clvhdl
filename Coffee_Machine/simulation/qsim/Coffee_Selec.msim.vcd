@@ -1,0 +1,349 @@
+$comment
+	File created using the following command:
+		vcd file Coffee_Selec.msim.vcd -direction
+$end
+$date
+	Thu Dec 05 15:24:00 2024
+$end
+$version
+	ModelSim Version 2020.1
+$end
+$timescale
+	1ps
+$end
+
+$scope module coffee_selec_vhd_vec_tst $end
+$var wire 1 ! A $end
+$var wire 1 " B $end
+$var wire 1 # C $end
+$var wire 1 $ D $end
+$var wire 1 % E $end
+$var wire 1 & Err $end
+$var wire 1 ' F $end
+$var wire 1 ( G $end
+$var wire 1 ) H $end
+$var wire 1 * Saida [6] $end
+$var wire 1 + Saida [5] $end
+$var wire 1 , Saida [4] $end
+$var wire 1 - Saida [3] $end
+$var wire 1 . Saida [2] $end
+$var wire 1 / Saida [1] $end
+$var wire 1 0 Saida [0] $end
+
+$scope module i1 $end
+$var wire 1 1 gnd $end
+$var wire 1 2 vcc $end
+$var wire 1 3 unknown $end
+$var wire 1 4 devoe $end
+$var wire 1 5 devclrn $end
+$var wire 1 6 devpor $end
+$var wire 1 7 ww_devoe $end
+$var wire 1 8 ww_devclrn $end
+$var wire 1 9 ww_devpor $end
+$var wire 1 : ww_A $end
+$var wire 1 ; ww_B $end
+$var wire 1 < ww_C $end
+$var wire 1 = ww_D $end
+$var wire 1 > ww_E $end
+$var wire 1 ? ww_F $end
+$var wire 1 @ ww_G $end
+$var wire 1 A ww_H $end
+$var wire 1 B ww_Saida [6] $end
+$var wire 1 C ww_Saida [5] $end
+$var wire 1 D ww_Saida [4] $end
+$var wire 1 E ww_Saida [3] $end
+$var wire 1 F ww_Saida [2] $end
+$var wire 1 G ww_Saida [1] $end
+$var wire 1 H ww_Saida [0] $end
+$var wire 1 I ww_Err $end
+$var wire 1 J \Saida[0]~output_o\ $end
+$var wire 1 K \Saida[1]~output_o\ $end
+$var wire 1 L \Saida[2]~output_o\ $end
+$var wire 1 M \Saida[3]~output_o\ $end
+$var wire 1 N \Saida[4]~output_o\ $end
+$var wire 1 O \Saida[5]~output_o\ $end
+$var wire 1 P \Saida[6]~output_o\ $end
+$var wire 1 Q \Err~output_o\ $end
+$var wire 1 R \D~input_o\ $end
+$var wire 1 S \G~input_o\ $end
+$var wire 1 T \F~input_o\ $end
+$var wire 1 U \E~input_o\ $end
+$var wire 1 V \B~input_o\ $end
+$var wire 1 W \C~input_o\ $end
+$var wire 1 X \i0|S[1]~1_combout\ $end
+$var wire 1 Y \A~input_o\ $end
+$var wire 1 Z \i0|S[0]~0_combout\ $end
+$var wire 1 [ \i2|Mux6~0_combout\ $end
+$var wire 1 \ \H~input_o\ $end
+$var wire 1 ] \i0|Err~2_combout\ $end
+$var wire 1 ^ \i0|Err~0_combout\ $end
+$var wire 1 _ \i0|Err~1_combout\ $end
+$var wire 1 ` \i0|Err~3_combout\ $end
+$var wire 1 a \i2|Mux5~0_combout\ $end
+$var wire 1 b \i2|Mux4~0_combout\ $end
+$var wire 1 c \i2|Mux3~0_combout\ $end
+$var wire 1 d \i2|Mux1~0_combout\ $end
+$var wire 1 e \i2|Mux0~0_combout\ $end
+$var wire 1 f \i0|S\ [2] $end
+$var wire 1 g \i0|S\ [1] $end
+$var wire 1 h \i0|S\ [0] $end
+$var wire 1 i \i2|ALT_INV_Mux6~0_combout\ $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0!
+0"
+1#
+0$
+0%
+0&
+0'
+0(
+0)
+01
+12
+x3
+14
+15
+16
+17
+18
+19
+0:
+0;
+1<
+0=
+0>
+0?
+0@
+0A
+0I
+0J
+1K
+1L
+0M
+0N
+0O
+1P
+0Q
+0R
+0S
+0T
+0U
+0V
+1W
+1X
+0Y
+1Z
+1[
+0\
+1]
+0^
+0_
+0`
+1a
+1b
+0c
+0d
+1e
+0i
+1*
+0+
+0,
+0-
+1.
+1/
+00
+1B
+0C
+0D
+0E
+1F
+1G
+0H
+0f
+xg
+xh
+$end
+#1000
+1!
+0#
+1:
+0<
+0W
+1Y
+0X
+0a
+0b
+1c
+0e
+0P
+1M
+0L
+0K
+0B
+1E
+0F
+0G
+0/
+0.
+1-
+0*
+#2000
+0!
+1#
+1"
+0:
+1<
+1;
+1V
+1W
+0Y
+1X
+1_
+1`
+1a
+1b
+0c
+1e
+1P
+0M
+1L
+1K
+1Q
+1B
+0E
+1F
+1G
+1I
+1/
+1.
+0-
+1*
+1&
+#3000
+1!
+0#
+1:
+0<
+0W
+1Y
+#4000
+0!
+1#
+0"
+0:
+1<
+0;
+0V
+1W
+0Y
+0_
+0`
+0Q
+0I
+0&
+#5000
+1!
+0#
+1:
+0<
+0W
+1Y
+0X
+0a
+0b
+1c
+0e
+0P
+1M
+0L
+0K
+0B
+1E
+0F
+0G
+0/
+0.
+1-
+0*
+#6000
+0!
+1#
+1"
+0:
+1<
+1;
+1V
+1W
+0Y
+1X
+1_
+1`
+1a
+1b
+0c
+1e
+1P
+0M
+1L
+1K
+1Q
+1B
+0E
+1F
+1G
+1I
+1/
+1.
+0-
+1*
+1&
+#7000
+1!
+0#
+1:
+0<
+0W
+1Y
+#8000
+0!
+1#
+0"
+0:
+1<
+0;
+0V
+1W
+0Y
+0_
+0`
+0Q
+0I
+0&
+#9000
+1!
+0#
+1:
+0<
+0W
+1Y
+0X
+0a
+0b
+1c
+0e
+0P
+1M
+0L
+0K
+0B
+1E
+0F
+0G
+0/
+0.
+1-
+0*

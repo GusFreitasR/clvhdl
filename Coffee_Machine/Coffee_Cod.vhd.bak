@@ -1,0 +1,9 @@
+Library ieee;
+Use ieee.std_logic_1164.all;
+
+Entity Cofee_Cod is
+Port ();
+
+End;
+
+Architecture 

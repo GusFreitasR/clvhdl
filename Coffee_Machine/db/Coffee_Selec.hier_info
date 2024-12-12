@@ -1,0 +1,160 @@
+|Coffee_Selec
+A => Coffee_Cod:i0.A
+B => Coffee_Cod:i0.B
+C => Coffee_Cod:i0.C
+D => Coffee_Cod:i0.D
+E => Coffee_Cod:i0.E
+F => Coffee_Cod:i0.F
+G => Coffee_Cod:i0.G
+H => Coffee_Cod:i0.H
+See => and_3:i4.C
+Saida[0] <= Coffee_On_Mux:i5.S[0]
+Saida[1] <= Coffee_On_Mux:i5.S[1]
+Saida[2] <= Coffee_On_Mux:i5.S[2]
+Saida[3] <= Coffee_On_Mux:i5.S[3]
+Saida[4] <= Coffee_On_Mux:i5.S[4]
+Saida[5] <= Coffee_On_Mux:i5.S[5]
+Saida[6] <= Coffee_On_Mux:i5.S[6]
+Err <= refl:i6.S
+nSel <= refl:i7.S
+
+
+|Coffee_Selec|Coffee_Cod:i0
+A => S.IN0
+A => Err.IN1
+A => nSel.IN0
+B => S.IN0
+B => Err.IN1
+B => nSel.IN1
+C => S.IN1
+C => S.IN1
+C => Err.IN0
+C => Err.IN1
+C => nSel.IN1
+D => S.IN0
+D => Err.IN1
+D => Err.IN1
+D => Err.IN1
+D => nSel.IN1
+E => S.IN1
+E => S.IN1
+E => Err.IN1
+E => Err.IN1
+E => Err.IN0
+E => Err.IN1
+E => nSel.IN1
+F => S.IN1
+F => S.IN1
+F => Err.IN1
+F => Err.IN1
+F => Err.IN1
+F => Err.IN0
+F => Err.IN1
+F => nSel.IN1
+G => S.IN1
+G => S.IN1
+G => S.IN1
+G => Err.IN1
+G => Err.IN1
+G => Err.IN1
+G => Err.IN1
+G => Err.IN0
+G => Err.IN0
+G => nSel.IN1
+H => Err.IN1
+H => Err.IN1
+H => Err.IN1
+H => Err.IN1
+H => Err.IN1
+H => Err.IN1
+H => Err.IN1
+H => nSel.IN1
+S[0] <= S.DB_MAX_OUTPUT_PORT_TYPE
+S[1] <= S.DB_MAX_OUTPUT_PORT_TYPE
+S[2] <= S.DB_MAX_OUTPUT_PORT_TYPE
+Err <= Err.DB_MAX_OUTPUT_PORT_TYPE
+nSel <= nSel.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Coffee_Selec|Coffee_Mux:i1
+Selec[0] => Mux0.IN10
+Selec[0] => Mux1.IN10
+Selec[0] => Mux2.IN10
+Selec[0] => Mux3.IN10
+Selec[0] => Mux4.IN10
+Selec[0] => Mux5.IN10
+Selec[0] => Mux6.IN10
+Selec[1] => Mux0.IN9
+Selec[1] => Mux1.IN9
+Selec[1] => Mux2.IN9
+Selec[1] => Mux3.IN9
+Selec[1] => Mux4.IN9
+Selec[1] => Mux5.IN9
+Selec[1] => Mux6.IN9
+Selec[2] => Mux0.IN8
+Selec[2] => Mux1.IN8
+Selec[2] => Mux2.IN8
+Selec[2] => Mux3.IN8
+Selec[2] => Mux4.IN8
+Selec[2] => Mux5.IN8
+Selec[2] => Mux6.IN8
+Hex[0] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+Hex[1] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+Hex[2] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+Hex[3] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+Hex[4] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+Hex[5] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+Hex[6] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Coffee_Selec|neg:i2
+A => nA.DATAIN
+nA <= A.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Coffee_Selec|neg:i3
+A => nA.DATAIN
+nA <= A.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Coffee_Selec|and_3:i4
+A => S.IN0
+B => S.IN1
+C => S.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Coffee_Selec|Coffee_On_Mux:i5
+Hex[0] => S.DATAB
+Hex[1] => S.DATAB
+Hex[2] => S.DATAB
+Hex[3] => S.DATAB
+Hex[4] => S.DATAB
+Hex[5] => S.DATAB
+Hex[6] => S.DATAB
+See => S.OUTPUTSELECT
+See => S.OUTPUTSELECT
+See => S.OUTPUTSELECT
+See => S.OUTPUTSELECT
+See => S.OUTPUTSELECT
+See => S.OUTPUTSELECT
+See => S.OUTPUTSELECT
+S[0] <= S.DB_MAX_OUTPUT_PORT_TYPE
+S[1] <= S.DB_MAX_OUTPUT_PORT_TYPE
+S[2] <= S.DB_MAX_OUTPUT_PORT_TYPE
+S[3] <= S.DB_MAX_OUTPUT_PORT_TYPE
+S[4] <= S.DB_MAX_OUTPUT_PORT_TYPE
+S[5] <= S.DB_MAX_OUTPUT_PORT_TYPE
+S[6] <= S.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Coffee_Selec|refl:i6
+E => S.DATAIN
+S <= E.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Coffee_Selec|refl:i7
+E => S.DATAIN
+S <= E.DB_MAX_OUTPUT_PORT_TYPE
+
+
