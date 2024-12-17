@@ -1,10 +1,10 @@
-Analysis & Synthesis Status : Successful - Thu Dec 12 13:38:56 2024
+Analysis & Synthesis Status : Successful - Tue Dec 17 10:47:56 2024
 Quartus Prime Version : 23.1std.0 Build 991 11/28/2023 SC Lite Edition
 Revision Name : Coffee_Selec
 Top-level Entity Name : Coffee_Selec
 Family : Cyclone IV E
-Total logic elements : 16
-    Total combinational functions : 16
+Total logic elements : 17
+    Total combinational functions : 17
     Dedicated logic registers : 0
 Total registers : 0
 Total pins : 18

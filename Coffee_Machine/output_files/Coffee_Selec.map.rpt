@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Coffee_Selec
-Thu Dec 12 13:38:56 2024
+Tue Dec 17 10:47:56 2024
 Quartus Prime Version 23.1std.0 Build 991 11/28/2023 SC Lite Edition
 
 
@@ -43,13 +43,13 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                        ;
 +------------------------------------+------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Dec 12 13:38:56 2024          ;
+; Analysis & Synthesis Status        ; Successful - Tue Dec 17 10:47:56 2024          ;
 ; Quartus Prime Version              ; 23.1std.0 Build 991 11/28/2023 SC Lite Edition ;
 ; Revision Name                      ; Coffee_Selec                                   ;
 ; Top-level Entity Name              ; Coffee_Selec                                   ;
 ; Family                             ; Cyclone IV E                                   ;
-; Total logic elements               ; 16                                             ;
-;     Total combinational functions  ; 16                                             ;
+; Total logic elements               ; 17                                             ;
+;     Total combinational functions  ; 17                                             ;
 ;     Dedicated logic registers      ; 0                                              ;
 ; Total registers                    ; 0                                              ;
 ; Total pins                         ; 18                                             ;
@@ -162,19 +162,19 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                        ;
-+----------------------------------+-----------------+-----------------+----------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                                 ; Library ;
-+----------------------------------+-----------------+-----------------+----------------------------------------------------------------------------------------------+---------+
-; and_3.vhd                        ; yes             ; User VHDL File  ; C:/Users/santo/Documents/Circuitos_Atividades/Atividade_2.1/Coffee_Machine/and_3.vhd         ;         ;
-; Coffee_On_Mux.vhd                ; yes             ; User VHDL File  ; C:/Users/santo/Documents/Circuitos_Atividades/Atividade_2.1/Coffee_Machine/Coffee_On_Mux.vhd ;         ;
-; Coffee_Selec.vhd                 ; yes             ; User VHDL File  ; C:/Users/santo/Documents/Circuitos_Atividades/Atividade_2.1/Coffee_Machine/Coffee_Selec.vhd  ;         ;
-; Coffee_Mux.vhd                   ; yes             ; User VHDL File  ; C:/Users/santo/Documents/Circuitos_Atividades/Atividade_2.1/Coffee_Machine/Coffee_Mux.vhd    ;         ;
-; Coffee_Cod.vhd                   ; yes             ; User VHDL File  ; C:/Users/santo/Documents/Circuitos_Atividades/Atividade_2.1/Coffee_Machine/Coffee_Cod.vhd    ;         ;
-; refl.vhd                         ; yes             ; User VHDL File  ; C:/Users/santo/Documents/Circuitos_Atividades/Atividade_2.1/Coffee_Machine/refl.vhd          ;         ;
-; neg.vhd                          ; yes             ; User VHDL File  ; C:/Users/santo/Documents/Circuitos_Atividades/Atividade_2.1/Coffee_Machine/neg.vhd           ;         ;
-+----------------------------------+-----------------+-----------------+----------------------------------------------------------------------------------------------+---------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                 ;
++----------------------------------+-----------------+-----------------+---------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                          ; Library ;
++----------------------------------+-----------------+-----------------+---------------------------------------------------------------------------------------+---------+
+; and_2.vhd                        ; yes             ; User VHDL File  ; C:/Users/santo/Documents/Circuitos_Atividades/clvhdl/Coffee_Machine/and_2.vhd         ;         ;
+; and_3.vhd                        ; yes             ; User VHDL File  ; C:/Users/santo/Documents/Circuitos_Atividades/clvhdl/Coffee_Machine/and_3.vhd         ;         ;
+; Coffee_On_Mux.vhd                ; yes             ; User VHDL File  ; C:/Users/santo/Documents/Circuitos_Atividades/clvhdl/Coffee_Machine/Coffee_On_Mux.vhd ;         ;
+; Coffee_Selec.vhd                 ; yes             ; User VHDL File  ; C:/Users/santo/Documents/Circuitos_Atividades/clvhdl/Coffee_Machine/Coffee_Selec.vhd  ;         ;
+; Coffee_Mux.vhd                   ; yes             ; User VHDL File  ; C:/Users/santo/Documents/Circuitos_Atividades/clvhdl/Coffee_Machine/Coffee_Mux.vhd    ;         ;
+; Coffee_Cod.vhd                   ; yes             ; User VHDL File  ; C:/Users/santo/Documents/Circuitos_Atividades/clvhdl/Coffee_Machine/Coffee_Cod.vhd    ;         ;
+; neg.vhd                          ; yes             ; User VHDL File  ; C:/Users/santo/Documents/Circuitos_Atividades/clvhdl/Coffee_Machine/neg.vhd           ;         ;
++----------------------------------+-----------------+-----------------+---------------------------------------------------------------------------------------+---------+
 
 
 +--------------------------------------------------------------------+
@@ -182,16 +182,16 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+----------------------+
 ; Resource                                    ; Usage                ;
 +---------------------------------------------+----------------------+
-; Estimated Total logic elements              ; 16                   ;
+; Estimated Total logic elements              ; 17                   ;
 ;                                             ;                      ;
-; Total combinational functions               ; 16                   ;
+; Total combinational functions               ; 17                   ;
 ; Logic element usage by number of LUT inputs ;                      ;
 ;     -- 4 input functions                    ; 15                   ;
-;     -- 3 input functions                    ; 0                    ;
+;     -- 3 input functions                    ; 1                    ;
 ;     -- <=2 input functions                  ; 1                    ;
 ;                                             ;                      ;
 ; Logic elements by mode                      ;                      ;
-;     -- normal mode                          ; 16                   ;
+;     -- normal mode                          ; 17                   ;
 ;     -- arithmetic mode                      ; 0                    ;
 ;                                             ;                      ;
 ; Total registers                             ; 0                    ;
@@ -204,8 +204,8 @@ https://fpgasoftware.intel.com/eula.
 ;                                             ;                      ;
 ; Maximum fan-out node                        ; Coffee_Cod:i0|nSel~0 ;
 ; Maximum fan-out                             ; 10                   ;
-; Total fan-out                               ; 89                   ;
-; Average fan-out                             ; 1.71                 ;
+; Total fan-out                               ; 92                   ;
+; Average fan-out                             ; 1.74                 ;
 +---------------------------------------------+----------------------+
 
 
@@ -214,9 +214,11 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------+---------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name            ; Entity Name   ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------+---------------+--------------+
-; |Coffee_Selec              ; 16 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 18   ; 0            ; |Coffee_Selec                  ; Coffee_Selec  ; work         ;
-;    |Coffee_Cod:i0|         ; 8 (8)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Coffee_Selec|Coffee_Cod:i0    ; Coffee_Cod    ; work         ;
+; |Coffee_Selec              ; 17 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 18   ; 0            ; |Coffee_Selec                  ; Coffee_Selec  ; work         ;
+;    |Coffee_Cod:i0|         ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Coffee_Selec|Coffee_Cod:i0    ; Coffee_Cod    ; work         ;
 ;    |Coffee_On_Mux:i5|      ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Coffee_Selec|Coffee_On_Mux:i5 ; Coffee_On_Mux ; work         ;
+;    |and_2:i6|              ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Coffee_Selec|and_2:i6         ; and_2         ; work         ;
+;    |and_2:i7|              ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Coffee_Selec|and_2:i7         ; and_2         ; work         ;
 ;    |and_3:i4|              ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Coffee_Selec|and_3:i4         ; and_3         ; work         ;
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------+---------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
@@ -245,12 +247,13 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; boundary_port         ; 18                          ;
 ; cycloneiii_lcell_comb ; 18                          ;
 ;     normal            ; 18                          ;
-;         1 data inputs ; 2                           ;
+;         1 data inputs ; 1                           ;
 ;         2 data inputs ; 1                           ;
+;         3 data inputs ; 1                           ;
 ;         4 data inputs ; 15                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 5.00                        ;
-; Average LUT depth     ; 4.41                        ;
+; Average LUT depth     ; 4.37                        ;
 +-----------------------+-----------------------------+
 
 
@@ -269,49 +272,49 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 23.1std.0 Build 991 11/28/2023 SC Lite Edition
-    Info: Processing started: Thu Dec 12 13:38:19 2024
+    Info: Processing started: Tue Dec 17 10:47:09 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Coffee_Selec -c Coffee_Selec
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (12021): Found 2 design units, including 1 entities, in source file and_2.vhd
+    Info (12022): Found design unit 1: and_2-Dataflow File: C:/Users/santo/Documents/Circuitos_Atividades/clvhdl/Coffee_Machine/and_2.vhd Line: 9
+    Info (12023): Found entity 1: and_2 File: C:/Users/santo/Documents/Circuitos_Atividades/clvhdl/Coffee_Machine/and_2.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file and_3.vhd
-    Info (12022): Found design unit 1: and_3-Behavioral File: C:/Users/santo/Documents/Circuitos_Atividades/Atividade_2.1/Coffee_Machine/and_3.vhd Line: 9
-    Info (12023): Found entity 1: and_3 File: C:/Users/santo/Documents/Circuitos_Atividades/Atividade_2.1/Coffee_Machine/and_3.vhd Line: 4
+    Info (12022): Found design unit 1: and_3-Behavioral File: C:/Users/santo/Documents/Circuitos_Atividades/clvhdl/Coffee_Machine/and_3.vhd Line: 9
+    Info (12023): Found entity 1: and_3 File: C:/Users/santo/Documents/Circuitos_Atividades/clvhdl/Coffee_Machine/and_3.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file coffee_on_mux.vhd
-    Info (12022): Found design unit 1: Coffee_On_Mux-Dataflow File: C:/Users/santo/Documents/Circuitos_Atividades/Atividade_2.1/Coffee_Machine/Coffee_On_Mux.vhd Line: 10
-    Info (12023): Found entity 1: Coffee_On_Mux File: C:/Users/santo/Documents/Circuitos_Atividades/Atividade_2.1/Coffee_Machine/Coffee_On_Mux.vhd Line: 4
+    Info (12022): Found design unit 1: Coffee_On_Mux-Dataflow File: C:/Users/santo/Documents/Circuitos_Atividades/clvhdl/Coffee_Machine/Coffee_On_Mux.vhd Line: 10
+    Info (12023): Found entity 1: Coffee_On_Mux File: C:/Users/santo/Documents/Circuitos_Atividades/clvhdl/Coffee_Machine/Coffee_On_Mux.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file coffee_selec.vhd
-    Info (12022): Found design unit 1: Coffee_Selec-Structural File: C:/Users/santo/Documents/Circuitos_Atividades/Atividade_2.1/Coffee_Machine/Coffee_Selec.vhd Line: 10
-    Info (12023): Found entity 1: Coffee_Selec File: C:/Users/santo/Documents/Circuitos_Atividades/Atividade_2.1/Coffee_Machine/Coffee_Selec.vhd Line: 4
+    Info (12022): Found design unit 1: Coffee_Selec-Structural File: C:/Users/santo/Documents/Circuitos_Atividades/clvhdl/Coffee_Machine/Coffee_Selec.vhd Line: 10
+    Info (12023): Found entity 1: Coffee_Selec File: C:/Users/santo/Documents/Circuitos_Atividades/clvhdl/Coffee_Machine/Coffee_Selec.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file coffee_mux.vhd
-    Info (12022): Found design unit 1: Coffee_Mux-Dataflow File: C:/Users/santo/Documents/Circuitos_Atividades/Atividade_2.1/Coffee_Machine/Coffee_Mux.vhd Line: 9
-    Info (12023): Found entity 1: Coffee_Mux File: C:/Users/santo/Documents/Circuitos_Atividades/Atividade_2.1/Coffee_Machine/Coffee_Mux.vhd Line: 4
+    Info (12022): Found design unit 1: Coffee_Mux-Dataflow File: C:/Users/santo/Documents/Circuitos_Atividades/clvhdl/Coffee_Machine/Coffee_Mux.vhd Line: 9
+    Info (12023): Found entity 1: Coffee_Mux File: C:/Users/santo/Documents/Circuitos_Atividades/clvhdl/Coffee_Machine/Coffee_Mux.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file coffee_cod.vhd
-    Info (12022): Found design unit 1: Coffee_Cod-Dataflow File: C:/Users/santo/Documents/Circuitos_Atividades/Atividade_2.1/Coffee_Machine/Coffee_Cod.vhd Line: 10
-    Info (12023): Found entity 1: Coffee_Cod File: C:/Users/santo/Documents/Circuitos_Atividades/Atividade_2.1/Coffee_Machine/Coffee_Cod.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file refl.vhd
-    Info (12022): Found design unit 1: refl-Dataflow File: C:/Users/santo/Documents/Circuitos_Atividades/Atividade_2.1/Coffee_Machine/refl.vhd Line: 9
-    Info (12023): Found entity 1: refl File: C:/Users/santo/Documents/Circuitos_Atividades/Atividade_2.1/Coffee_Machine/refl.vhd Line: 4
+    Info (12022): Found design unit 1: Coffee_Cod-Dataflow File: C:/Users/santo/Documents/Circuitos_Atividades/clvhdl/Coffee_Machine/Coffee_Cod.vhd Line: 10
+    Info (12023): Found entity 1: Coffee_Cod File: C:/Users/santo/Documents/Circuitos_Atividades/clvhdl/Coffee_Machine/Coffee_Cod.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file neg.vhd
-    Info (12022): Found design unit 1: neg-Behavioral File: C:/Users/santo/Documents/Circuitos_Atividades/Atividade_2.1/Coffee_Machine/neg.vhd Line: 9
-    Info (12023): Found entity 1: neg File: C:/Users/santo/Documents/Circuitos_Atividades/Atividade_2.1/Coffee_Machine/neg.vhd Line: 4
+    Info (12022): Found design unit 1: neg-Behavioral File: C:/Users/santo/Documents/Circuitos_Atividades/clvhdl/Coffee_Machine/neg.vhd Line: 9
+    Info (12023): Found entity 1: neg File: C:/Users/santo/Documents/Circuitos_Atividades/clvhdl/Coffee_Machine/neg.vhd Line: 4
 Info (12127): Elaborating entity "Coffee_Selec" for the top level hierarchy
-Info (12128): Elaborating entity "Coffee_Cod" for hierarchy "Coffee_Cod:i0" File: C:/Users/santo/Documents/Circuitos_Atividades/Atividade_2.1/Coffee_Machine/Coffee_Selec.vhd Line: 43
-Info (12128): Elaborating entity "Coffee_Mux" for hierarchy "Coffee_Mux:i1" File: C:/Users/santo/Documents/Circuitos_Atividades/Atividade_2.1/Coffee_Machine/Coffee_Selec.vhd Line: 44
-Info (12128): Elaborating entity "neg" for hierarchy "neg:i2" File: C:/Users/santo/Documents/Circuitos_Atividades/Atividade_2.1/Coffee_Machine/Coffee_Selec.vhd Line: 45
-Info (12128): Elaborating entity "and_3" for hierarchy "and_3:i4" File: C:/Users/santo/Documents/Circuitos_Atividades/Atividade_2.1/Coffee_Machine/Coffee_Selec.vhd Line: 47
-Info (12128): Elaborating entity "Coffee_On_Mux" for hierarchy "Coffee_On_Mux:i5" File: C:/Users/santo/Documents/Circuitos_Atividades/Atividade_2.1/Coffee_Machine/Coffee_Selec.vhd Line: 48
-Info (12128): Elaborating entity "refl" for hierarchy "refl:i6" File: C:/Users/santo/Documents/Circuitos_Atividades/Atividade_2.1/Coffee_Machine/Coffee_Selec.vhd Line: 49
+Info (12128): Elaborating entity "Coffee_Cod" for hierarchy "Coffee_Cod:i0" File: C:/Users/santo/Documents/Circuitos_Atividades/clvhdl/Coffee_Machine/Coffee_Selec.vhd Line: 43
+Info (12128): Elaborating entity "Coffee_Mux" for hierarchy "Coffee_Mux:i1" File: C:/Users/santo/Documents/Circuitos_Atividades/clvhdl/Coffee_Machine/Coffee_Selec.vhd Line: 44
+Info (12128): Elaborating entity "neg" for hierarchy "neg:i2" File: C:/Users/santo/Documents/Circuitos_Atividades/clvhdl/Coffee_Machine/Coffee_Selec.vhd Line: 45
+Info (12128): Elaborating entity "and_3" for hierarchy "and_3:i4" File: C:/Users/santo/Documents/Circuitos_Atividades/clvhdl/Coffee_Machine/Coffee_Selec.vhd Line: 47
+Info (12128): Elaborating entity "Coffee_On_Mux" for hierarchy "Coffee_On_Mux:i5" File: C:/Users/santo/Documents/Circuitos_Atividades/clvhdl/Coffee_Machine/Coffee_Selec.vhd Line: 48
+Info (12128): Elaborating entity "and_2" for hierarchy "and_2:i6" File: C:/Users/santo/Documents/Circuitos_Atividades/clvhdl/Coffee_Machine/Coffee_Selec.vhd Line: 49
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 34 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 35 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 9 input pins
     Info (21059): Implemented 9 output pins
-    Info (21061): Implemented 16 logic cells
+    Info (21061): Implemented 17 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 2 warnings
-    Info: Peak virtual memory: 4833 megabytes
-    Info: Processing ended: Thu Dec 12 13:38:56 2024
-    Info: Elapsed time: 00:00:37
-    Info: Total CPU time (on all processors): 00:00:20
+    Info: Peak virtual memory: 4837 megabytes
+    Info: Processing ended: Tue Dec 17 10:47:56 2024
+    Info: Elapsed time: 00:00:47
+    Info: Total CPU time (on all processors): 00:00:37
 
 
