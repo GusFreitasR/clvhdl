@@ -30,9 +30,9 @@ Component Coffee_On_Mux is
 			See : in std_logic;
 			S : out std_logic_vector (6 downto 0));
 End Component;
-Component refl is
-	Port (E : in std_logic;
-			S : out std_logic);
+Component and_2 is
+	Port (A, B : in std_logic;
+			C : out std_logic);
 End Component;
 
 	signal Selec : std_logic_vector (2 downto 0);
@@ -46,7 +46,7 @@ Begin
 	i3 : neg            Port Map (nSele, nnSel);
 	i4 : and_3          Port Map (nErr, nnSel, See, sight);
 	i5 : Coffee_On_Mux  Port Map (Hex, sight, Saida);
-	i6 : refl           Port Map (Erro, Err);
-	i7 : refl           Port Map (nSele, nSel);
+	i6 : and_2          Port Map (Erro, See, Err);
+	i7 : and_2          Port Map (nSele, See, nSel);
 	
 End Structural;
