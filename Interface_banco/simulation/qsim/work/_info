@@ -1,0 +1,154 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/caio/Documentos/clvhdl/Interface_banco/simulation/qsim
+Ehard_block
+Z1 w1738248509
+Z2 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
+Z3 DPx10 cycloneive 20 cycloneive_atom_pack 0 22 WOh:M[al;oVzG5c`<He>D0
+Z4 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
+Z5 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z6 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+Z7 DPx10 cycloneive 21 cycloneive_components 0 22 zGMDhP>8e@2k@f0e<PY]k2
+!i122 14
+R0
+Z8 8interface.vho
+Z9 Finterface.vho
+l0
+L35 1
+VB]0;STalBkCB1_B4BXQDW2
+!s100 >mXi5[`cD`bFC`UBKA<om3
+Z10 OV;C;2020.1;71
+32
+Z11 !s110 1738248509
+!i10b 1
+Z12 !s108 1738248509.000000
+Z13 !s90 -work|work|interface.vho|
+Z14 !s107 interface.vho|
+!i113 1
+Z15 o-work work
+Z16 tExplicit 1 CvgOpt 0
+Astructure
+R2
+R3
+R4
+R5
+R6
+R7
+DEx4 work 10 hard_block 0 22 B]0;STalBkCB1_B4BXQDW2
+!i122 14
+l65
+L51 20
+Via>5o7W??azG@W@@eFOTF0
+!s100 [5;Wd8QGQ>@2NGoJ1I]Y43
+R10
+32
+R11
+!i10b 1
+R12
+R13
+R14
+!i113 1
+R15
+R16
+Einterface
+R1
+R3
+R7
+R2
+Z17 DPx6 altera 11 dffeas_pack 0 22 dc5N=DKXMMTVYdUQ@D3FA2
+R4
+R5
+R6
+Z18 DPx6 altera 28 altera_primitives_components 0 22 ca:ehlQAg4;_gVV:^8MAg3
+!i122 14
+R0
+R8
+R9
+l0
+L80 1
+Vbh4o1UMLONo0V]LZDRY`g0
+!s100 F`E4FKXXk<[A5CmLTPzJo0
+R10
+32
+R11
+!i10b 1
+R12
+R13
+R14
+!i113 1
+R15
+R16
+Astructure
+R3
+R7
+R2
+R17
+R4
+R5
+R6
+R18
+DEx4 work 9 interface 0 22 bh4o1UMLONo0V]LZDRY`g0
+!i122 14
+l564
+L149 6775
+VX7FiKW[_3RWG9o::`UTa92
+!s100 7ocgnh?7HgbjjLMV26d4z2
+R10
+32
+Z19 !s110 1738248510
+!i10b 1
+R12
+R13
+R14
+!i113 1
+R15
+R16
+Einterface_vhd_vec_tst
+Z20 w1738248508
+R5
+R6
+!i122 15
+R0
+Z21 8Waveform.vwf.vht
+Z22 FWaveform.vwf.vht
+l0
+L32 1
+VTTge=9_:ZCO8RmK4fUM_A1
+!s100 4nBGmVCQ5_e[D^o5gU?`S2
+R10
+32
+R19
+!i10b 1
+Z23 !s108 1738248510.000000
+Z24 !s90 -work|work|Waveform.vwf.vht|
+Z25 !s107 Waveform.vwf.vht|
+!i113 1
+R15
+R16
+Ainterface_arch
+R5
+R6
+Z26 DEx4 work 21 interface_vhd_vec_tst 0 22 TTge=9_:ZCO8RmK4fUM_A1
+!i122 15
+l53
+L34 230
+VT3d5?6U^z>80MV]jCZ[NJ0
+!s100 Ti:6>9Rel4;HD_PSEk^4d0
+R10
+32
+R19
+!i10b 1
+R23
+R24
+R25
+!i113 1
+R15
+R16

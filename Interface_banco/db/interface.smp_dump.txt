@@ -1,0 +1,14 @@
+
+State Machine - |interface|banco_registradores:reg_bank_inst|state
+Name state.writing state.reading state.pickingReg state.IDLE 
+state.IDLE 0 0 0 0 
+state.pickingReg 0 0 1 1 
+state.reading 0 1 0 1 
+state.writing 1 0 0 1 
+
+State Machine - |interface|banco_registradores:reg_bank_inst|outputState
+Name outputState.writing~reg0 outputState.reading~reg0 outputState.pickingReg~reg0 outputState.IDLE~reg0 
+outputState.IDLE~reg0 0 0 0 0 
+outputState.pickingReg~reg0 0 0 1 1 
+outputState.reading~reg0 0 1 0 1 
+outputState.writing~reg0 1 0 0 1 

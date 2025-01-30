@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Thu Jan 30 12:00:30 2025
+Quartus Prime Version : 23.1std.0 Build 991 11/28/2023 SC Lite Edition
+Revision Name : interface
+Top-level Entity Name : interface
+Family : Cyclone IV E
+Total logic elements : 297
+    Total combinational functions : 166
+    Dedicated logic registers : 152
+Total registers : 152
+Total pins : 55
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0
